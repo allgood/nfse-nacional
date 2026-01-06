@@ -33,6 +33,7 @@ class RestCurl extends RestBase
         parent::__construct($cert);
         $this->config = json_decode($config);
         $this->certificate = $cert;
+        $this->httpver = CURL_HTTP_VERSION_1_1;
         //        $this->wsobj = $this->loadWsobj($this->config->cmun);
     }
 
