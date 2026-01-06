@@ -30,7 +30,7 @@
     "php": "^7.3 || ^8.2",
     "symfony/var-dumper": "^6.4 || ^7.1",
     "tecnickcom/tcpdf": "^6.7",
-    "nfephp-org/sped-common": "^5.1",
+    "nfephp-org/sped-common": "^5.0",
     "ext-dom": "*",
     "nesbot/carbon": "^3.8 || ^2.73",
     "ext-curl": "*",
