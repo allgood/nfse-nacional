@@ -13,8 +13,8 @@ class RestBase
     protected $certificate;
     protected $disableCertValidation = false;
     protected $tempdir;
-    private Files $filesystem;
-    private string $certsdir;
+    private $filesystem;
+    private $certsdir;
     protected $prifile;
     protected $pubfile;
     protected $certfile;

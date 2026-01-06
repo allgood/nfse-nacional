@@ -35,8 +35,8 @@ class Dps implements DpsInterface
      * @var Dom
      */
     protected $dom;
-    private string $dpsId;
-    private string $preId;
+    private $dpsId;
+    private $preId;
 
     /**
      * Constructor

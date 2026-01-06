@@ -14,17 +14,17 @@ class RestCurl extends RestBase
     const URL_SEFIN_PRODUCAO = 'https://sefin.nfse.gov.br/sefinnacional';
     const URL_ADN_HOMOLOGACAO = 'https://adn.producaorestrita.nfse.gov.br';
     const URL_ADN_PRODUCAO = 'https://adn.nfse.gov.br';
-    private mixed $config;
-    private string $url_api;
+    private $config;
+    private $url_api;
     private $connection_timeout = 30;
     private $timeout = 30;
     private $httpver;
-    public string $soaperror;
-    public int $soaperror_code;
-    public array $soapinfo;
-    public string $responseHead;
-    public string $responseBody;
-    private string $requestHead;
+    public $soaperror;
+    public $soaperror_code;
+    public $soapinfo;
+    public $responseHead;
+    public $responseBody;
+    private $requestHead;
 
     protected $canonical = [true, false, null, null];
 
@@ -188,7 +188,7 @@ class RestCurl extends RestBase
      * @param string $mark
      * @return string XML signed
      */
-    public function sign(string $content, string $tagname, ?string $mark, $rootname)
+    public function sign(string $content, string $tagname, $mark, $rootname)
     {
         if (empty($mark)) {
             $mark = 'Id';
